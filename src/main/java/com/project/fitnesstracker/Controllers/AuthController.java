@@ -64,7 +64,7 @@ public class AuthController {
         return ResponseEntity.ok(userService.register(registerRequest));
     }
 
-     @GetMapping("/getAllUsers")
+     @GetMapping
      public ResponseEntity<List<UserResponseDTO>> getAllUsers() {
          return ResponseEntity.ok(userService.getAllUsers());
      }
