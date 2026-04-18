@@ -23,10 +23,10 @@ jobs:
       - name: Build with Maven
         run: mvn clean install
 
-      - name: Debug Username
+      - name: Debug username
         run: echo "VALUE='${{ secrets.DOCKER_USERNAME }}'"
 
-      - name: Debug Password
+      - name: Debug password
         run: echo "VALUE='${{ secrets.DOCKER_PASSWORD }}'"
 
       - name: Login to DockerHub
